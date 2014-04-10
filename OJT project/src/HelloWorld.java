@@ -3,23 +3,38 @@ import java.util.Calendar;
 import java.text.SimpleDateFormat;
 public class HelloWorld {
 	public static void main(String [] args){
-	//timer now = new timer();
-	System.out.print("");
+	TimerDemo JM = new TimerDemo();
+	JM.demo();
 	
 	
-	Calendar cal = Calendar.getInstance();
-	cal.getTime();
-	SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
-	System.out.println( sdf.format(cal.getTime()) );
+	
+	
 	
 	
 } 
 }
 
+
+
+
 class timer {
-	
-	
-	
+Date GetCurrentDate()
+{Calendar cal = Calendar.getInstance();
+	return cal.getTime(); 
+}
+}
+class TimerDemo{
+	timer now = new timer();
+	void demo(){
+		
+System.out.print("Hello!How can I help?/n[1]Get Current Time/n[2]Sign in ");
+	Scanner input = new Scanner(System.in);	
+		
+		
+		
+		
+		
+	}
 	
 	
 	
